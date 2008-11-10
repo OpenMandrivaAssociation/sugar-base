@@ -1,14 +1,12 @@
-%define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")
-
 Summary: Base Sugar library
 Name: sugar-base
 Version: 0.82.2
-Release: 1%{?dist}
+Release: %mkrel 1
 URL: http://dev.laptop.org/
 Source0: http://dev.laptop.org/pub/sugar/sources/sugar-base/%{name}-%{version}.tar.bz2
 License: LGPLv2
-Group: System Environment/Libraries
-Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Group: System/Libraries
+Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires: libpython-devel
 BuildRequires: python-gobject-devel
