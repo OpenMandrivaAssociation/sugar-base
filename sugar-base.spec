@@ -1,7 +1,7 @@
 Summary: Base Sugar library
 Name: sugar-base
 Version: 0.82.2
-Release: %mkrel 1
+Release: %mkrel 2
 URL: http://dev.laptop.org/
 Source0: http://dev.laptop.org/pub/sugar/sources/sugar-base/%{name}-%{version}.tar.bz2
 License: LGPLv2
