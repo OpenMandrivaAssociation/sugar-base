@@ -26,6 +26,7 @@ BuildRequires: libpython-devel
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
+
 %description
 The base libary for Sugar. It provides helpers for the development
 of services and activities.
@@ -34,18 +35,15 @@ of services and activities.
 %setup -q -n sugar-base-0.84.0
 
 
-# eliminate %%configure's "clever" behaviour
-%define __libtoolize true
-
 %build
-%configure 
-make 
+%define __libtoolize true
+%configure
+make
 
 %install
 rm -rf %{buildroot}
-make  \
-	DESTDIR=%{buildroot} \
-	install
+make DESTDIR=%{buildroot} install
+install -d -m 0755 %{buildroot}/%{_datadir}/sugar/activities
 %find_lang sugar-base
 
 %clean
@@ -53,6 +51,8 @@ rm -rf %{buildroot}
 
 %files -f sugar-base.lang
 %defattr(-,root,root,-)
+%dir %{_datadir}/sugar
+%dir %{_datadir}/sugar/activities
 %{python_sitelib}/*
 %doc COPYING NEWS
 
