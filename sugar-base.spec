@@ -2,7 +2,7 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-base
-Version: 0.85.6
+Version: 0.86.0
 Release: %mkrel 1
 Summary: Base Sugar library
 License: LGPLv2
@@ -35,7 +35,7 @@ The base libary for Sugar. It provides helpers for the development
 of services and activities.
 
 %prep
-%setup -q -n sugar-base-0.85.6
+%setup -q -n sugar-base-0.86.0
 
 
 %build
