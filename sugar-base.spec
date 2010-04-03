@@ -2,14 +2,14 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-base
-Version: 0.86.0
-Release: %mkrel 2
+Version: 0.88.0
+Release: %mkrel 1
 Summary: Base Sugar library
 License: LGPLv2
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-base/sugar-base-0.86.0.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/glucose/sugar-base/sugar-base-0.88.0.tar.bz2
 
 Requires: python-dbus  
 Requires: python-decorator  
@@ -35,7 +35,7 @@ The base libary for Sugar. It provides helpers for the development
 of services and activities.
 
 %prep
-%setup -q -n sugar-base-0.86.0
+%setup -q -n sugar-base-0.88.0
 
 
 %build
