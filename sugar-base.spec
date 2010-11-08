@@ -3,7 +3,7 @@
 
 Name: sugar-base
 Version: 0.88.0
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Base Sugar library
 License: LGPLv2
 Group: Graphical desktop/Other
@@ -27,7 +27,7 @@ BuildRequires: python-gobject-devel >= 2.15
 BuildRequires: pygtk2.0-devel  
 BuildRequires: libpython-devel  
 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 
 %description
@@ -39,8 +39,7 @@ of services and activities.
 
 
 %build
-%define __libtoolize true
-%configure
+%configure2_5x
 make
 
 %install
