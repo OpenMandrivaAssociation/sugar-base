@@ -3,7 +3,7 @@
 
 Name: sugar-base
 Version: 0.88.0
-Release: %mkrel 2
+Release: 3
 Summary: Base Sugar library
 License: LGPLv2
 Group: Graphical desktop/Other
@@ -25,9 +25,7 @@ BuildRequires: intltool >= 0.33
 BuildRequires: pkgconfig  
 BuildRequires: python-gobject-devel >= 2.15
 BuildRequires: pygtk2.0-devel  
-BuildRequires: libpython-devel  
-
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRequires: python-devel  
 
 
 %description
@@ -58,3 +56,100 @@ rm -rf %{buildroot}
 %{python_sitelib}/*
 %doc COPYING NEWS
 
+
+
+%changelog
+* Mon Nov 08 2010 Funda Wang <fwang@mandriva.org> 0.88.0-2mdv2011.0
++ Revision: 595034
+- rebuild for py2.7
+
+* Sat Apr 03 2010 Aleksey Lim <alsroot@mandriva.org> 0.88.0-1mdv2010.1
++ Revision: 530885
+- Sucrose 0.88.0 release
+
+* Fri Sep 25 2009 Aleksey Lim <alsroot@mandriva.org> 0.86.0-2mdv2010.0
++ Revision: 448854
+- Update to 0.86.0
+- Update to 0.86.0
+
+* Fri Sep 18 2009 Aleksey Lim <alsroot@mandriva.org> 0.85.6-1mdv2010.0
++ Revision: 444476
+- Update to 0.85.6
+
+* Fri Sep 11 2009 Aleksey Lim <alsroot@mandriva.org> 0.85.5-1mdv2010.0
++ Revision: 438301
+- Update to 0.85.2
+
+* Tue Aug 11 2009 Aleksey Lim <alsroot@mandriva.org> 0.85.2-1mdv2010.0
++ Revision: 414748
+- Sucrose 0.85.2 release
+
+* Wed Mar 04 2009 Aleksey Lim <alsroot@mandriva.org> 0.84.0-1mdv2009.1
++ Revision: 348243
+- Sucrose 0.84.0 release
+
+* Mon Feb 23 2009 Aleksey Lim <alsroot@mandriva.org> 0.83.4-1mdv2009.1
++ Revision: 344161
+- Sucrose 0.83.6 release
+
+* Tue Jan 20 2009 Aleksey Lim <alsroot@mandriva.org> 0.83.3-1mdv2009.1
++ Revision: 331936
+- new Sucrose 0.83.4 release
+
+* Sun Jan 11 2009 Aleksey Lim <alsroot@mandriva.org> 0.83.2-1mdv2009.1
++ Revision: 328374
+- Sugar 0.83.3 release
+
+* Sat Jan 10 2009 Funda Wang <fwang@mandriva.org> 0.82.2-2mdv2009.1
++ Revision: 327871
+- rebuild
+
+* Mon Nov 10 2008 Bogdano Arendartchuk <bogdano@mandriva.com> 0.82.2-1mdv2009.1
++ Revision: 301842
+- import sugar-base
+
+
+* Thu Aug 28 2008 Marco Pesenti Gritti <mpg@redhat.com> - 0.82.2-1
+- Translation updates
+
+* Thu Aug 07 2008 Marco Pesenti Gritti <mpg@redhat.com> - 0.82.1-1
+- added languages Norwegian and Slovenian
+- translation update
+
+* Fri Aug 01 2008 Morgan Collett <morgan@laptop.org> - 0.81.3-1
+- Update to 0.81.3
+- Make logger safe to full disk
+- Translation updates
+
+* Tue Jul 08 2008 Simon Schampijer <simon@schampijer.de> - 0.81.2-3
+- BuildRequires: perl-XML-Parser
+
+* Tue Jul 08 2008 Simon Schampijer <simon@schampijer.de> - 0.81.2-2
+- added gettext as build require
+
+* Tue Jul 08 2008 Simon Schampijer <simon@schampijer.de> - 0.81.2-1
+- gained its own translation module and some languages have already been contributed
+
+* Mon Jun 09 2008 Simon Schampijer <simon@schampijer.de> - 0.81.1-1
+- Fix logging (Tomeu) 
+
+* Tue Apr 22 2008 Tomeu Vizoso <tomeu@tomeuvizoso.net> - 0.79.1-1
+- Pylint cleanup.
+
+* Sat Feb  9 2008 Marco Pesenti Gritti <mpg@redhat.com> - 0.79.0-1
+- Update to 0.79.0
+
+* Sun Nov 25 2007 Marco Pesenti Gritti <mpg@redhat.com> - 0.1.1-1
+- Update to 0.1.1
+
+* Tue Nov 13 2007 Marco Pesenti Gritti <mpg@redhat.com> - 0.1-0.6.20071113git1a04bb7c71
+- #4838 More verbose traces (mstone)
+
+* Fri Nov  2 2007 Marco Pesenti Gritti <mpg@redhat.com> - 0.1-0.5.20071102git15797de32a
+- New snapshot
+
+* Thu Nov  1 2007 Marco Pesenti Gritti <mpg@redhat.com> - 0.1-0.4.20071016git7364e0078e
+- Remove unnecessary pkgconfig buildreq
+
+* Sat Oct 20 2007 Marco Pesenti Gritti <mpg@redhat.com> - 0.1-0.3.20071016git7364e0078e
+- New snapshot
