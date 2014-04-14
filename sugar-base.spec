@@ -3,14 +3,14 @@
 %define _disable_ld_no_undefined 1
  
 Name:		sugar-base
-Version:	0.88.0
-Release:	4
+Version:	0.98.0
+Release:	1
 Summary:	Base Sugar library
 License:	LGPLv2
 Group:		Graphical desktop/Other
 Url:		http://sugarlabs.org/
 
-Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-base/sugar-base-0.88.0.tar.bz2
+Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-base/sugar-base-%{version}.tar.bz2
 
 Requires:	python-dbus  
 Requires:	python-decorator  
@@ -34,7 +34,7 @@ The base libary for Sugar. It provides helpers for the development
 of services and activities.
 
 %prep
-%setup -q -n sugar-base-0.88.0
+%setup -q 
 
 
 %build
