@@ -4,7 +4,7 @@
  
 Name:		sugar-base
 Version:	0.98.0
-Release:	1
+Release:	2
 Summary:	Base Sugar library
 License:	LGPLv2
 Group:		Graphical desktop/Other
@@ -14,7 +14,6 @@ Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-base/sugar-
 
 Requires:	python-dbus  
 Requires:	python-decorator  
-Requires:	gnome-python-gconf  
 Requires:	python-gobject >= 2.15
 Requires:	pygtk2.0  
 Requires:	python  
