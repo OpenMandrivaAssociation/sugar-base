@@ -4,7 +4,7 @@
  
 Name:		sugar-base
 Version:	0.98.0
-Release:	2
+Release:	3
 Summary:	Base Sugar library
 License:	LGPLv2
 Group:		Graphical desktop/Other
