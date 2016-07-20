@@ -12,20 +12,20 @@ Url:		http://sugarlabs.org/
 
 Source0:	http://download.sugarlabs.org/sources/sucrose/glucose/sugar-base/sugar-base-%{version}.tar.bz2
 
-Requires:	python-dbus  
-Requires:	python-decorator  
-Requires:	python-gobject >= 2.15
+Requires:	python2-dbus  
+Requires:	python2-decorator  
+Requires:	python2-gobject >= 2.15
 Requires:	pygtk2.0  
-Requires:	python  
+Requires:	python2 
 Requires:	unzip  
 
 BuildRequires:	perl-XML-Parser  
 BuildRequires:	gettext  
 BuildRequires:	intltool >= 0.33
 BuildRequires:	pkgconfig  
-BuildRequires:	python-gobject-devel >= 2.15
+BuildRequires:	python2-gobject-devel >= 2.15
 BuildRequires:	pygtk2.0-devel  
-BuildRequires:	python-devel  
+BuildRequires:	python2-devel  
 
 
 %description
@@ -37,6 +37,7 @@ of services and activities.
 
 
 %build
+export PYTHON=python2
 %configure2_5x
 %make
 
@@ -49,7 +50,7 @@ install -d -m 0755 %{buildroot}/%{_datadir}/sugar/activities
 %files -f sugar-base.lang
 %dir %{_datadir}/sugar
 %dir %{_datadir}/sugar/activities
-%{python_sitelib}/*
+%{python2_sitelib}/*
 %doc COPYING NEWS
 
 
