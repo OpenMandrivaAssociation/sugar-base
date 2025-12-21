@@ -19,6 +19,11 @@ Requires:	pygtk2.0
 Requires:	python2 
 Requires:	unzip  
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	perl-XML-Parser  
 BuildRequires:	gettext  
 BuildRequires:	intltool >= 0.33
